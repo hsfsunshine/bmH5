@@ -12,6 +12,9 @@ var path = require('path');
 var util = require("./nodeServer/util.js");
 var mockRoute = require('./nodeserver/route.js');
 
+
+
+
 var server = http.createServer(function (request, response) {
 	var pathname = url.parse(request.url).pathname;
 	var realPath = pathname.substring(1);
